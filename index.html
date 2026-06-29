@@ -1,383 +1,836 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>"YUVA" FULL STACK DEVELOPER PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	< class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uvarani Pandian — Full Stack Developer</title>
+<meta name="description" content="Uvarani (Yuva) Pandian — Full Stack Developer specializing in .NET, React/TypeScript, and Azure. Based in Gothenburg, Sweden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#10172A;
+    --slate:#3D4759;
+    --muted:#6B7385;
+    --paper:#F6F4EF;
+    --panel:#FFFFFF;
+    --line:#E3E0D6;
+    --primary:#2451E0;
+    --primary-light:#4A6EF0;
+    --accent:#E8943A;
+    --success:#1F8A6E;
+    --success-bg:#EAF6F1;
+    --navy-deep:#0B1130;
+    --navy-mid:#162155;
+    --glow-blue:#3B5BFF;
+    --glow-amber:#FFB454;
+    --max:1120px;
+    --gap:clamp(1.5rem, 4vw, 3rem);
+  }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>UVARANI PANDIAN</h1>
-								<p><h2>FULL STACK DEVELOPER </h2>  <br />
-								</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-							
-								<li><a href="#Expertise">Expertise</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
 
-				<!-- Main -->
-					<div id="main">
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								
-								<p>Welcome to my portfolio!!!<br> I'm UVARANI PANDIAN,a passionate and Full Stack Developer dedicated to crafting innovative solution and contributing to meaningful projects in the tech industry.</p>
-								<p><b>EDUCATINAL BACKGROUND:</b></p>
-								<p>I hold a M.Sc  in IT from university of Madras,Where i honed my skills in Software Development and gained a solid foundation in computer science principles.</p>
-								<p><b>TECHNICAL SKILLS:</b></p>
-								<p>.NET,C#,Python,HTML, CSS, Java script,React,Flask,MySQL DB,Entity Framework,REST API ,MVC,LINQ,Version control:  Github,Bitbucket</p>
+  ::selection{background:var(--primary); color:#fff;}
 
-								<p><B>PROJECT MANAGEMENT FRAMEWORK</B></p>
-								<P>Agile Methodology,Scrum,Kanban Method</P>
-						
-								<P><B>TEAMWORK AND COLLABORATION</B></P>
-								<P>I prioritize open communication and team work to achieve goals.I have actively fostered open communication and promoted teamwork within my academic project.</P>
-                                <p><B>ADAPTABILITY AND WILLING TO LEARN:</B></p>
-								<P>As technology continues to evolve,i remain committed to continuous learning and growth.I actively seek out opportunity to expand my skill set,through online courses,self learning.</P>
+  :focus-visible{
+    outline:2px solid var(--primary);
+    outline-offset:3px;
+    border-radius:2px;
+  }
 
-								
-							</article>
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.01em;
+  }
 
-						<!-- Resume -->
-							<article id="Resume">
-								<h2 class="major">My Profile</h2>
-								<span class="image main"><img src="images/uva_resume.png" alt="" /></span>
-								</article>
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--primary);
+    font-weight:600;
+  }
 
-						<!-- About -->
-							<article id="Expertise">
-								<h2 class="major">Expertise</h2>
-								
-								<p>Currently working as a Full Stack Developer at Kemizares, contributing to a real-time healthcare project.  .</p>
+  h1,h2,h3{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight:700;
+    margin:0;
+    line-height:1.15;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
 
-						        
-								<p> Previously, I interned at Cousify Intelligent App Sweden AB, where I contributed to the development of the Trim Tab application, and collaborated with Luday AB on the Sokonekt application.</p>
-								<p>Before these contract-based roles, I completed on-the-job training at Lexicon AB, where I spent 8 months focusing on .NET Full Stack Development.</p> 
-							    <p>You can find some of these projects on <span style="color:rgb(166, 255, 0);">my git hub profile at</span>"  <a href="https://github.com/myusername86/" class="icon brands fa-github"><span class="label">GitHub</span></a></p>
-							
-								
-								
-							</article>
+  /* ===== Nav ===== */
+  header.site{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(11,17,48,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1.05rem var(--gap);
+    max-width:var(--max);
+    margin:0 auto;
+  }
+  .brand{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    text-decoration:none;
+    letter-spacing:-0.01em;
+    color:#fff;
+  }
+  .brand .dot{color:var(--glow-amber);}
+  nav.links{
+    display:flex;
+    gap:2rem;
+    font-size:0.92rem;
+  }
+  nav.links a{
+    text-decoration:none;
+    color:#B7C0E0;
+    padding-bottom:3px;
+    border-bottom:1px solid transparent;
+    transition:color .15s, border-color .15s;
+    font-weight:500;
+  }
+  nav.links a:hover{color:#fff; border-color:var(--glow-blue);}
+  .nav-toggle{display:none;}
+  .nav-cta{
+    font-size:0.88rem;
+    font-weight:600;
+    background:var(--glow-blue);
+    color:#fff;
+    padding:0.6rem 1.2rem;
+    border-radius:6px;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:background .15s;
+  }
+  .nav-cta:hover{background:#5470FF;}
 
-						<!-- Contact -->
-						<article id="contact">
-							<h2 class="major">Contact</h2>
-							<form method="post" action="#">
-								<body style="background-color: rgb(160, 143, 95);">
+  @media (max-width:760px){
+    nav.links{
+      position:fixed;
+      inset:62px 0 auto 0;
+      background:var(--navy-deep);
+      flex-direction:column;
+      gap:0;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      transform:translateY(-110%);
+      transition:transform .25s ease;
+      padding:0.5rem 0;
+    }
+    nav.links.open{transform:translateY(0);}
+    nav.links a{
+      padding:0.9rem var(--gap);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      width:100%;
+    }
+    .nav-toggle{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      background:none;
+      border:none;
+      cursor:pointer;
+      padding:6px;
+      margin-left:0.75rem;
+    }
+    .nav-toggle span{
+      width:21px; height:2px;
+      background:#fff;
+      display:block;
+    }
+    .nav-cta{font-size:0.78rem; padding:0.5rem 0.85rem;}
+  }
 
+  /* ===== Hero ===== */
+  .hero-band{
+    background:
+      radial-gradient(900px 500px at 12% -10%, rgba(59,91,255,0.35), transparent 60%),
+      radial-gradient(700px 480px at 95% 10%, rgba(255,180,84,0.18), transparent 55%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--navy-mid) 55%, var(--navy-deep) 100%);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-band::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size:42px 42px;
+    mask-image:linear-gradient(to bottom, rgba(0,0,0,0.9), transparent 75%);
+    pointer-events:none;
+  }
+  .hero{
+    padding:clamp(3.5rem,8vw,6rem) var(--gap) clamp(3rem,6vw,4.5rem);
+    max-width:var(--max);
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr;
+    gap:clamp(2.5rem,5vw,4.5rem);
+    align-items:center;
+  }
+  @media (max-width:840px){
+    .hero-grid{grid-template-columns:1fr;}
+  }
 
-								<div class="field half">
+  .status-row{
+    display:flex;
+    gap:0.6rem;
+    margin-bottom:1.5rem;
+    flex-wrap:wrap;
+  }
+  .pill{
+    font-size:0.82rem;
+    font-weight:500;
+    padding:0.4rem 0.85rem;
+    border-radius:20px;
+    display:inline-flex;
+    align-items:center;
+    gap:0.45rem;
+  }
+  .pill-status{background:rgba(31,138,110,0.18); color:#5FE3BC;}
+  .pill-status::before{content:''; width:7px; height:7px; border-radius:50%; background:#5FE3BC;}
+  .pill-loc{background:rgba(255,255,255,0.08); color:#C7D2FE;}
 
-									
+  .hero h1{
+    font-size:clamp(2.5rem, 5.2vw, 3.6rem);
+    color:#fff;
+  }
+  .hero h1 .accent{color:var(--glow-amber);}
 
-									<h3>Name: Uvarani Pandian</h3>
-									<br>
-									<br>
-									<h3>Email:pyuvarani.2011@gmail.com</h3>
-									<br>
-									<br>
-									<h3>Contact no: +46 769540287</h3>
-									<br>
-									<br>
-									<h3>Address: Askims Domarringsvag 250,Askim,Gothenburg,Sweden</h3>
-								</body>
-								
-							</form>
-							<br>
-							<ul class="icons">
-								
-								
-								<li><a href="https://www.linkedin.com/in/uvarani-pandian-b4269565/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/myusername86/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</article>
+  .role-line{
+    font-size:1.15rem;
+    color:#B7C0E0;
+    margin-top:0.85rem;
+    font-weight:500;
+  }
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+  .hero-copy{
+    margin-top:1.3rem;
+    max-width:50ch;
+    color:#9FA8C8;
+    font-size:1.04rem;
+  }
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+  .hero-cta{
+    margin-top:2.1rem;
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+  }
+  .btn{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight:600;
+    font-size:0.92rem;
+    text-decoration:none;
+    padding:0.85rem 1.6rem;
+    border-radius:7px;
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    transition:transform .15s, box-shadow .15s, background .15s, border-color .15s;
+  }
+  .btn-primary{
+    background:var(--glow-blue);
+    color:#fff;
+    box-shadow:0 1px 2px rgba(0,0,0,0.15);
+  }
+  .btn-primary:hover{background:#5470FF; transform:translateY(-1px); box-shadow:0 10px 24px -6px rgba(59,91,255,0.55);}
+  .btn-ghost{
+    border:1.5px solid rgba(255,255,255,0.22);
+    color:#fff;
+    background:rgba(255,255,255,0.04);
+  }
+  .btn-ghost:hover{border-color:rgba(255,255,255,0.45); background:rgba(255,255,255,0.08);}
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+  /* ===== Summary card ===== */
+  .summary-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:1.9rem;
+    box-shadow:0 1px 3px rgba(0,0,0,0.15), 0 24px 48px -20px rgba(59,91,255,0.45);
+  }
+  .summary-card .avatar{
+    width:54px; height:54px;
+    border-radius:12px;
+    background:var(--glow-blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight:700;
+    font-size:1.15rem;
+    margin-bottom:1.1rem;
+  }
+  .summary-card h3{font-size:1.05rem; margin-bottom:0.15rem;}
+  .summary-card .id-role{font-size:0.85rem; color:var(--muted); margin-bottom:1.3rem;}
+  .id-stats{display:flex; flex-direction:column; gap:0.8rem;}
+  .id-stat{display:flex; justify-content:space-between; align-items:baseline; font-size:0.86rem; border-bottom:1px solid var(--line); padding-bottom:0.7rem; gap:0.75rem;}
+  .id-stat:last-child{border-bottom:none; padding-bottom:0;}
+  .id-stat .k{color:var(--muted); font-size:0.78rem;}
+  .id-stat .v{font-weight:600; text-align:right;}
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+  /* ===== Section shell ===== */
+  section{
+    padding:clamp(3rem,6vw,4.5rem) var(--gap);
+    max-width:var(--max);
+    margin:0 auto;
+  }
+  .section-divider{
+    border:none;
+    border-top:1px solid var(--line);
+    max-width:var(--max);
+    margin:0 auto;
+  }
+  .section-head{
+    margin-bottom:2.5rem;
+  }
+  .section-head .eyebrow{display:block; margin-bottom:0.6rem;}
+  .section-head h2{
+    font-size:clamp(1.7rem,3.2vw,2.15rem);
+  }
 
-								<section>
-									<h3 class="major">Lists</h3>
+  /* ===== Timeline (Experience) ===== */
+  .timeline{
+    position:relative;
+    padding-left:2rem;
+    border-left:2px solid var(--line);
+  }
+  .tl-item{
+    position:relative;
+    padding-bottom:2.6rem;
+  }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-dot{
+    position:absolute;
+    left:-2.05rem;
+    top:0.25rem;
+    width:14px; height:14px;
+    border-radius:50%;
+    background:var(--primary);
+    border:3px solid var(--paper);
+    box-shadow:0 0 0 1px var(--line);
+  }
+  .tl-period{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--muted);
+    font-weight:500;
+    margin-bottom:0.4rem;
+  }
+  .tl-item h3{
+    font-size:1.2rem;
+    margin-bottom:0.5rem;
+    font-weight:600;
+  }
+  .tl-item h3 .co{color:var(--primary); font-weight:600;}
+  .tl-item p{
+    margin:0 0 0.8rem;
+    color:var(--slate);
+    font-size:0.97rem;
+    max-width:60ch;
+  }
+  .tl-loc{
+    font-size:0.78rem;
+    color:var(--muted);
+    background:#F1F2F6;
+    display:inline-block;
+    padding:0.28rem 0.7rem;
+    border-radius:5px;
+  }
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+  /* ===== Featured project ===== */
+  .project-feature{
+    border-radius:16px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    padding:clamp(2rem,4vw,2.75rem);
+    box-shadow:0 1px 3px rgba(16,23,42,0.04), 0 16px 32px -20px rgba(16,23,42,0.12);
+    position:relative;
+    overflow:hidden;
+  }
+  .project-feature::before{
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0;
+    height:4px;
+    background:linear-gradient(90deg, var(--glow-blue), var(--glow-amber));
+  }
+  .pf-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-bottom:1.1rem;
+  }
+  .pf-top h3{font-size:1.55rem;}
+  .pf-status{
+    font-size:0.76rem;
+    font-weight:600;
+    color:var(--success);
+    background:var(--success-bg);
+    padding:0.4rem 0.85rem;
+    border-radius:20px;
+    white-space:nowrap;
+    display:inline-flex;
+    align-items:center;
+    gap:0.4rem;
+  }
+  .pf-status::before{content:''; width:7px; height:7px; border-radius:50%; background:var(--success);}
+  .pf-desc{
+    max-width:66ch;
+    color:var(--slate);
+    margin:0 0 1.6rem;
+    font-size:1.01rem;
+  }
+  .pf-meta{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+    gap:1.25rem;
+    padding:1.4rem 1.5rem;
+    background:#F7F8FA;
+    border-radius:10px;
+    margin-bottom:1.7rem;
+  }
+  .pf-meta div .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.66rem;
+    text-transform:uppercase;
+    color:var(--muted);
+    letter-spacing:0.06em;
+    display:block;
+    margin-bottom:0.32rem;
+  }
+  .pf-meta div .val{
+    font-size:0.92rem;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .pf-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.55rem;
+    margin-bottom:1.9rem;
+  }
+  .chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    font-weight:500;
+    padding:0.36rem 0.8rem;
+    border-radius:5px;
+    color:var(--primary);
+    background:#EEF1F8;
+    border:1px solid #DCE3F2;
+  }
+  .pf-links{display:flex; gap:1rem; flex-wrap:wrap;}
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+  /* ===== Skills grid ===== */
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:1.1rem;
+  }
+  .skill-cell{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:1.5rem;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  .skill-cell:hover{border-color:#C7CEDD; box-shadow:0 8px 20px -14px rgba(16,23,42,0.2);}
+  .skill-cell .eyebrow{display:block; margin-bottom:0.9rem;}
+  .skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.45rem;
+  }
+  .skill-list span{
+    font-size:0.84rem;
+    font-weight:500;
+    background:#F1F2F6;
+    padding:0.32rem 0.7rem;
+    border-radius:5px;
+    color:var(--slate);
+  }
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+  .edu-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:1.5rem;
+  }
+  .edu-card p{margin:0; font-size:0.95rem; font-weight:600;}
+  .edu-card p span{display:block; color:var(--muted); font-weight:400; font-size:0.88rem; margin-top:0.2rem;}
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+  /* ===== Contact / footer ===== */
+  .contact-block{
+    background:
+      radial-gradient(600px 300px at 90% 0%, rgba(59,91,255,0.25), transparent 60%),
+      var(--navy-deep);
+    color:#fff;
+    border-radius:18px;
+    padding:clamp(2.25rem,5vw,3.5rem);
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:2.5rem;
+    position:relative;
+    overflow:hidden;
+  }
+  @media (max-width:760px){
+    .contact-block{grid-template-columns:1fr;}
+  }
+  .contact-block h2{color:#fff; font-size:clamp(1.85rem,3.6vw,2.3rem); margin-bottom:0.85rem;}
+  .contact-block p{color:#A9B2C7; max-width:42ch; margin:0 0 1.85rem; font-size:1.01rem;}
+  .contact-rows{font-size:0.92rem;}
+  .contact-row{
+    display:flex;
+    justify-content:space-between;
+    padding:0.9rem 0;
+    border-bottom:1px solid #232B40;
+    gap:1rem;
+  }
+  .contact-row:first-child{border-top:1px solid #232B40;}
+  .contact-row .k{color:#7E889E; font-size:0.84rem;}
+  .contact-row a{text-decoration:none; font-weight:500;}
+  .contact-row a:hover{color:#7FA0E8;}
+  .social-row{
+    display:flex;
+    gap:0.8rem;
+    margin-top:1.6rem;
+  }
+  .social-row a{
+    text-decoration:none;
+    color:#fff;
+    border:1.5px solid #2C3650;
+    font-weight:600;
+    font-size:0.86rem;
+    padding:0.62rem 1.25rem;
+    border-radius:7px;
+    transition:background .15s, border-color .15s;
+  }
+  .social-row a:hover{background:#1A2336; border-color:#3A4666;}
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+  footer.site-footer{
+    text-align:center;
+    padding:2.5rem var(--gap) 3rem;
+    font-size:0.84rem;
+    color:var(--muted);
+  }
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+  /* fade-up on scroll */
+  .reveal{
+    opacity:0;
+    transform:translateY(14px);
+    transition:opacity .55s ease, transform .55s ease;
+  }
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+<header class="site">
+  <div class="navbar">
+    <a href="#top" class="brand">Uvarani Pandian<span class="dot">.</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#work">Experience</a>
+      <a href="#project">Project</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <a href="#contact" class="nav-cta">Contact me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+<main id="top">
 
-							</article>
+  <!-- HERO -->
+  <div class="hero-band">
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="status-row">
+          <span class="pill pill-status">Open to opportunities</span>
+          <span class="pill pill-loc">Gothenburg, Sweden</span>
+        </div>
+        <h1>Uvarani Pandian — <span class="accent">Full Stack Developer</span></h1>
+        <div class="role-line">.NET Core · React / TypeScript · Azure</div>
+        <p class="hero-copy">
+          I build cloud-backed web applications end to end — from C#/.NET APIs through React front ends to the Azure services that run them. Currently developing SnapReceipt, a production-style project, while looking for my next full stack role in Gothenburg.
+        </p>
+        <div class="hero-cta">
+          <a href="#project" class="btn btn-primary">View featured project</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
 
-					</div>
+      <div class="summary-card">
+        <div class="avatar">UP</div>
+        <h3>Uvarani Pandian</h3>
+        <div class="id-role">Full Stack Developer</div>
+        <div class="id-stats">
+          <div class="id-stat"><span class="k">Experience</span><span class="v">5+ years</span></div>
+          <div class="id-stat"><span class="k">Core stack</span><span class="v">.NET · React · Azure</span></div>
+          <div class="id-stat"><span class="k">Location</span><span class="v">Gothenburg, SE</span></div>
+          <div class="id-stat"><span class="k">Work permit</span><span class="v">Valid through Dec 2026</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-					</footer>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head reveal">
+      <span class="eyebrow">About</span>
+      <h2>Background</h2>
+    </div>
+    <div class="hero-grid reveal">
+      <div>
+        <p style="color:var(--slate); font-size:1.01rem; margin-bottom:1.1rem;">
+          I'm a full stack developer with roots in enterprise backend engineering in India — IBM, Technosoft, and Flextronics — and a second chapter built in Sweden since 2023, where I've worked across .NET Core APIs, React/TypeScript front ends, and Azure infrastructure through a series of Gothenburg-based roles and programmes.
+        </p>
+        <p style="color:var(--slate); font-size:1.01rem; margin:0;">
+          What I care about: code that's actually deployed, not just demoed — authentication done properly, data scoped per user, and APIs that hold up outside a tutorial. SnapReceipt, below, is where I prove that out.
+        </p>
+      </div>
+      <div class="edu-card">
+        <span class="eyebrow" style="display:block; margin-bottom:0.85rem;">Education</span>
+        <p>M.Sc. in Information Technology<span>University of Madras</span></p>
+      </div>
+    </div>
+  </section>
 
-			</div>
+  <hr class="section-divider">
 
-		<!-- BG -->
-			<div id="bg"></div>
+  <!-- EXPERIENCE -->
+  <section id="work">
+    <div class="section-head reveal">
+      <span class="eyebrow">Career</span>
+      <h2>Experience</h2>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-period">2025 — PRESENT</div>
+        <h3>Full Stack Developer <span class="co">— Kemizares AB</span></h3>
+        <p>Contributing to a real-time healthcare application — .NET Core services and a React front end, deployed and iterated in a live product context.</p>
+        <span class="tl-loc">Gothenburg, SE</span>
+      </div>
 
-	</body>
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-period">2024 — 2025</div>
+        <h3>Full Stack Developer <span class="co">— Coursfy Intelligent Apps</span></h3>
+        <p>Built features for the Trim Tab application as part of a Sweden-based development team, working across the .NET / React stack.</p>
+        <span class="tl-loc">Gothenburg, SE</span>
+      </div>
+
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-period">2024</div>
+        <h3>Full Stack Developer <span class="co">— Luday AB</span></h3>
+        <p>Collaborated on the Sokonekt application, contributing to both backend services and front-end implementation.</p>
+        <span class="tl-loc">Gothenburg, SE</span>
+      </div>
+
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-period">2023 — 2024</div>
+        <h3>.NET Full Stack Trainee <span class="co">— Lexicon AB</span></h3>
+        <p>8-month intensive on-the-job training programme in .NET full stack development — C#, ASP.NET, SQL, and modern front-end tooling.</p>
+        <span class="tl-loc">Gothenburg, SE</span>
+      </div>
+
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-period">2009 — 2019</div>
+        <h3>Software Engineer <span class="co">— IBM · Technosoft · Flextronics</span></h3>
+        <p>A decade of enterprise development experience in India spanning backend systems and large-scale corporate environments, before a career break.</p>
+        <span class="tl-loc">India</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- FEATURED PROJECT -->
+  <section id="project">
+    <div class="section-head reveal">
+      <span class="eyebrow">Portfolio project</span>
+      <h2>SnapReceipt</h2>
+    </div>
+
+    <div class="project-feature reveal">
+      <div class="pf-top">
+        <h3>SnapReceipt — cloud receipt scanner</h3>
+        <span class="pf-status">In active development</span>
+      </div>
+      <p class="pf-desc">
+        A cloud-native receipt scanner: snap a receipt, let Azure AI Document Intelligence pull out the line items, and store everything per-user in Cosmos DB behind proper authentication. Built to prove out a full production-shaped slice of the .NET + React + Azure stack, not just a CRUD demo.
+      </p>
+
+      <div class="pf-meta">
+        <div><span class="label">API</span><span class="val">.NET 10 Minimal API</span></div>
+        <div><span class="label">Frontend</span><span class="val">React + MSAL</span></div>
+        <div><span class="label">Auth</span><span class="val">Entra External ID (CIAM)</span></div>
+        <div><span class="label">Data</span><span class="val">Cosmos DB, per-user isolation</span></div>
+        <div><span class="label">OCR</span><span class="val">Azure AI Document Intelligence</span></div>
+        <div><span class="label">Hosting</span><span class="val">Azure Static Web Apps</span></div>
+      </div>
+
+      <div class="pf-stack">
+        <span class="chip">.NET 10</span>
+        <span class="chip">C#</span>
+        <span class="chip">React</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">Azure Cosmos DB</span>
+        <span class="chip">Azure Static Web Apps</span>
+        <span class="chip">Entra External ID</span>
+        <span class="chip">Document Intelligence</span>
+      </div>
+
+      <div class="pf-links">
+        <a href="https://github.com/myusername86/snapreceipt" class="btn btn-primary">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head reveal">
+      <span class="eyebrow">Capabilities</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-cell">
+        <span class="eyebrow">Languages &amp; Frameworks</span>
+        <div class="skill-list">
+          <span>C#</span><span>.NET Core</span><span>ASP.NET</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Python</span><span>Flask</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <span class="eyebrow">Data &amp; APIs</span>
+        <div class="skill-list">
+          <span>Entity Framework</span><span>REST APIs</span><span>LINQ</span><span>MVC</span><span>SQL / MySQL</span><span>Cosmos DB</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <span class="eyebrow">Cloud &amp; DevOps</span>
+        <div class="skill-list">
+          <span>Azure Functions</span><span>Azure Static Web Apps</span><span>Entra External ID</span><span>Key Vault</span><span>Blob Storage</span><span>Document Intelligence</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <span class="eyebrow">Practice &amp; Tools</span>
+        <div class="skill-list">
+          <span>Git / GitHub</span><span>Bitbucket</span><span>Agile</span><span>Scrum</span><span>Kanban</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-block reveal">
+      <div>
+        <h2>Let's talk</h2>
+        <p>Open to full stack opportunities in Gothenburg and across Sweden — happy to share more about my background and SnapReceipt.</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/uvarani-pandian-b4269565/">LinkedIn</a>
+          <a href="https://github.com/myusername86/">GitHub</a>
+        </div>
+      </div>
+      <div class="contact-rows">
+        <div class="contact-row"><span class="k">Email</span><a href="mailto:pyuvarani.2011@gmail.com">pyuvarani.2011@gmail.com</a></div>
+        <div class="contact-row"><span class="k">Phone</span><a href="tel:+46769540287">+46 76 954 02 87</a></div>
+        <div class="contact-row"><span class="k">Based in</span><span>Gothenburg, Sweden</span></div>
+        <div class="contact-row"><span class="k">Work permit</span><span>Valid through Dec 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © 2026 Uvarani Pandian
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => obs.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
 </html>
